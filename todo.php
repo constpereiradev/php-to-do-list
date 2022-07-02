@@ -23,7 +23,7 @@ class Tarefa{
     }
 
     public function insert($table){
-        
+        $sql = 
     }
 }
 
