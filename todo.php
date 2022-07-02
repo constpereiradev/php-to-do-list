@@ -1,6 +1,6 @@
 <?php
 
-
+require 'connection.php';
 use PDO;
 
 class Tarefa{
