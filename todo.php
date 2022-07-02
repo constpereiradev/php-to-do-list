@@ -1,30 +1,37 @@
 <?php
 
 
+use PDO;
+
 class Tarefa{
 
     public string $tarefa;
 
     public string $table;
 
-    
-
-
+    //metodo construct
     public function __construct($tarefa)
     {
         $this->tarefa = $tarefa;
     }
 
 
-    public function connection(){
 
+    //metodo insert
+    public function insert (){
 
-        $conn = new PDO('');
+        $sql = ("INSERT INTO tarefa VALUES ('?')");
+
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute();
+
     }
+        
 
-    public function insert($table){
-        $sql = 
-    }
+
+        
+
+    
 }
 
 
